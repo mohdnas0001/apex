@@ -5,7 +5,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="flex w-full h-screen flex-col items-center justify-between gap-10 p-4">
+    <main className="flex max-w-7xl w-full h-screen flex-col items-center justify-between gap-10 p-4">
       <Ellipse />
       <Clients/>
       <Services/>
