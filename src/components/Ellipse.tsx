@@ -70,7 +70,7 @@ const Ellipse = () => {
           cx="400"
           cy="200"
           rx="375"
-          ry="190"
+          ry="150"
           style={{
             fill: "none",
             stroke: "#ed73b1",
@@ -84,7 +84,7 @@ const Ellipse = () => {
           cx="400"
           cy="200"
           rx="370"
-          ry="185"
+          ry="145"
           style={{
             fill: "none",
             stroke: "#3dd9eb",

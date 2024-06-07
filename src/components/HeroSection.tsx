@@ -1,0 +1,79 @@
+import React from "react";
+import Image from "next/image";
+
+const animationStyles = `
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 50; 
+    }
+  }
+`;
+
+const HeroSection = () => {
+  return (
+    <div className="relative w-full h-full mt-10">
+      <style>{animationStyles}</style>
+      <div className="absolute inset-0 flex items-center justify-center ">
+        <div className="flex flex-col items-center gap-6">
+          <div className="bg-white flex flex-row justify-between gap-2 items-center border border-gray-400 rounded-full px-4 py-1">
+            <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="3.5" cy="4" r="3.5" fill="#27D939" />
+            </svg>
+            <p className="text-gray-900 text-base font-medium">APEX Technology</p>
+          </div>
+          <h2 className="w-[832px] text-gray-900 text-center font-sans text-4xl font-medium">
+            We offer a seamlessly integrated suite <br/> of technology and
+            security solutions to <br/> empower your organization
+          </h2>
+          <div className="w-64 h-20 bg-gradient-radial from-green-400 via-white to-white rounded-lg flex items-center justify-center">
+  <button className="bg-black text-white text-xs font-bold py-2 px-12 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+    Get Started
+  </button>
+</div>
+        </div>
+      </div>
+      <svg
+        className="w-full h-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 780 410"
+      >
+        <ellipse
+          id="green_line"
+          cx="400"
+          cy="200"
+          rx="375"
+          ry="165"
+          style={{
+            fill: "none",
+            stroke: "#27D939",
+            strokeDasharray: "2, 2",
+            animation: "dash 5s linear infinite",
+          }}
+        />
+        <ellipse
+          id="red_line"
+          cx="400"
+          cy="200"
+          rx="370"
+          ry="160"
+          style={{
+            fill: "none",
+            stroke: "#FD4141",
+            strokeDasharray: "2, 2",
+            animation: "dash 5s linear infinite",
+          }}
+        />
+        <image x="190" y="30" href="/React.svg" width="60" height="60" />
+        <image x="240" y="30" href="/WebAppTag.svg" width="130" height="84" />
+        <image x="580" y="35" href="/Flutter.svg" width="60" height="60" />
+        <image x="630" y="25" href="/MobileTag.svg" width="120" height="84" />
+        <image x="55" y="255" href="/Node.svg" width="60" height="60" />
+        <image x="100" y="260" href="/BackendTag.svg" width="120" height="84" />
+        <image x="491" y="320" href="/CyberSecurity.svg" width="60" height="60" />
+        <image x="540" y="307" href="/CyberSecurityTag.svg" width="100" height="84" />
+      </svg>
+    </div>
+  );
+};
+
+export default HeroSection;

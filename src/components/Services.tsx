@@ -6,7 +6,7 @@ const Services: React.FC = () => {
     <div className="flex my-10 w-full justify-center items-center p-8">
       <div className="w-full flex flex-col gap-4">
         <div className="w-full flex flex-row justify-center items-center gap-4">
-        <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center">
             <svg
               width="96"
               height="2"
@@ -61,8 +61,7 @@ const Services: React.FC = () => {
             Future, Successfully Navigating the Ever-Changing Finance
           </p>
         </div>
-    <ServicesCard/>
-
+        <ServicesCard />
       </div>
     </div>
   );

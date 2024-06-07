@@ -1,12 +1,12 @@
 "use client";
-import React from 'react';
+import React from "react";
 import {
   Card,
   CardHeader,
   CardBody,
   Typography,
   Avatar,
-} from '@material-tailwind/react';
+} from "@material-tailwind/react";
 
 function StarIcon() {
   return (
@@ -42,7 +42,7 @@ export function TestimonialCard({ name, role, comment, image }) {
         <Avatar size="lg" variant="circular" src={image} alt={name} />
         <div className="flex w-full flex-col gap-0.5">
           <div className="flex items-center justify-between">
-            <Typography className='font-inter' variant="h5" color="blue-gray">
+            <Typography className="font-inter" variant="h5" color="blue-gray">
               {name}
             </Typography>
             <div className="flex items-center gap-0">
@@ -53,11 +53,13 @@ export function TestimonialCard({ name, role, comment, image }) {
               <StarIcon />
             </div>
           </div>
-          <Typography className='font-inter' color="blue-gray">{role}</Typography>
+          <Typography className="font-inter" color="blue-gray">
+            {role}
+          </Typography>
         </div>
       </CardHeader>
       <CardBody className="mb-2 p-0">
-        <Typography className='font-inter'>“{comment}”</Typography>
+        <Typography className="font-inter">“{comment}”</Typography>
       </CardBody>
     </Card>
   );
