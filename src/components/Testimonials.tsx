@@ -4,7 +4,7 @@ import { testimonials } from "../constant/index";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col my-10 items-center p-8">
+    <div className="flex flex-col justify-between gap-6 my-10 items-center p-8">
       <div className="w-full flex flex-col gap-4">
       <div className="w-full flex flex-row justify-center items-center gap-4">
         <div className="flex justify-center items-center">
