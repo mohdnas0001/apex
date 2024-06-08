@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -15,7 +17,6 @@ const partners = [
 const PartnersCarousel: React.FC = () => {
   const settings = {
     dots: true,
-    infinite: true,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -28,10 +29,13 @@ const PartnersCarousel: React.FC = () => {
       <Slider {...settings}>
         {partners.map((partner) => (
           <div key={partner.id} style={{ padding: "0 10px" }}>
-            <img
+            <Image
               src={partner.logo}
               alt={partner.name}
-              style={{ width: "100%", height: "auto" }}
+              width={200}
+              height={100}
+              layout="responsive"
+              objectFit="contain"
             />
           </div>
         ))}

@@ -11,11 +11,11 @@ const animationStyles = `
 
 const HeroSection = () => {
   return (
-    <div className="relative mx-auto mt-10 flex w-full">
+    <div className="mt-18 relative mx-auto flex w-full flex-col lg:mt-10">
       <style>{animationStyles}</style>
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="inset-0 flex items-center justify-center md:absolute md:flex-col">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">
-          <div className="mb-4 flex flex-row items-center justify-between gap-1 bg-white px-1 py-0 md:rounded-full md:border md:border-gray-200 md:px-4 md:py-1 lg:gap-2">
+          <div className="mb-4 flex flex-row items-center justify-between gap-1 rounded-full border border-gray-200 bg-white px-2 py-0 md:px-4 md:py-1 lg:gap-2">
             <svg
               width="7"
               height="8"
@@ -25,15 +25,15 @@ const HeroSection = () => {
             >
               <circle cx="3.5" cy="4" r="3.5" fill="#27D939" />
             </svg>
-            <p className="font-sans text-base font-normal leading-6 text-gray-900 md:text-sm lg:text-base">
+            <p className="font-sans text-xs font-normal leading-6 text-gray-900 md:text-sm lg:text-base">
               APEX Technology
             </p>
           </div>
-          <h2 className="hidden w-[832px] text-center font-sans font-medium text-gray-900 md:block md:text-2xl lg:text-5xl">
+          <h2 className="text-center font-sans font-medium text-gray-900 md:block md:text-2xl lg:w-[832px] lg:text-5xl">
             We offer a seamlessly integrated suite <br /> of technology and
             security solutions to <br /> empower your organization
           </h2>
-          <div className="relative flex w-full items-center justify-center overflow-hidden rounded-lg md:h-28 lg:h-44">
+          <div className="relative flex h-20 w-full items-center justify-center overflow-hidden rounded-lg md:h-28 lg:h-44">
             <Image
               src="/Blur.svg"
               alt="Background Image"
