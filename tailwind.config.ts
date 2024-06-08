@@ -14,6 +14,12 @@ module.exports = withMT({
       fontFamily: {
         'sans': ['"Jakarta Sans"', 'sans-serif'], 
       },
+      screens: {
+        'xl': '1200px',
+      },
+      maxWidth: {
+        'screen-xl': '1200px',
+      },
     },
   },
   plugins: [],
