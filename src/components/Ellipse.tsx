@@ -21,8 +21,8 @@ const animationStyles = `
 
 const Ellipse = () => {
   return (
-    <div className="w-full h-full mt-10">
-      <div className="absolute top-10 left-16 p-2 bg-transparent shadow-lg">
+    <div className="mt-10 h-full w-full">
+      <div className="absolute left-16 top-10 bg-transparent p-2 shadow-lg">
         {/* <div
           className="w-[140px] md:w-[170px] h-[140px] md:h-[170px] flex items-center justify-center"
           style={{
@@ -35,7 +35,7 @@ const Ellipse = () => {
         ></div> */}
       </div>
       <svg
-        className="w-full h-full"
+        className="h-full w-full"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 780 410"
       >

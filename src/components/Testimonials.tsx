@@ -4,10 +4,10 @@ import { testimonials } from "../constant/index";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col justify-between gap-6 my-10 items-center p-8">
-      <div className="w-full flex flex-col gap-4">
-        <div className="w-full flex flex-row justify-center items-center gap-4">
-          <div className="flex justify-center items-center">
+    <div className="my-10 flex flex-col items-center justify-between gap-6 p-8">
+      <div className="flex w-full flex-col gap-4">
+        <div className="flex w-full flex-row items-center justify-center gap-4">
+          <div className="flex items-center justify-center">
             <svg
               width="96"
               height="2"
@@ -26,12 +26,12 @@ const Testimonials = () => {
               />
             </svg>
           </div>
-          <div className="flex px-2 justify-center items-center bg-[#20CFC6] bg-opacity-20 rounded-sm">
-            <h1 className="text-center text-lg  font-semibold text-[#008080]">
+          <div className="flex items-center justify-center rounded-sm bg-[#20CFC6] bg-opacity-20 px-2">
+            <h1 className="text-center text-lg font-semibold text-[#008080]">
               OUR TESTIMONIALS
             </h1>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex items-center justify-center">
             <svg
               width="96"
               height="2"
@@ -51,15 +51,15 @@ const Testimonials = () => {
             </svg>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-6 items-center justify-center ">
-          <h1 className="font-bold text-black text-[40px]">
+        <div className="flex w-full flex-col items-center justify-center gap-6">
+          <h1 className="text-[40px] font-bold text-black">
             What Our Customers Say
           </h1>
         </div>
       </div>
 
       {/* Testimonials */}
-      <div className="w-full flex flex-wrap justify-center gap-2">
+      <div className="flex w-full flex-wrap justify-center gap-2">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-[26rem]">
             <TestimonialCard

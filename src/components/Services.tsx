@@ -3,10 +3,10 @@ import ServicesCard from "./ui/ServicesCard";
 
 const Services: React.FC = () => {
   return (
-    <div className="flex my-10 w-full justify-center items-center p-8">
-      <div className="w-full flex flex-col gap-4">
-        <div className="w-full flex flex-row justify-center items-center gap-4">
-          <div className="flex justify-center items-center">
+    <div className="my-10 flex w-full items-center justify-center p-8">
+      <div className="flex w-full flex-col gap-4">
+        <div className="flex w-full flex-row items-center justify-center gap-4">
+          <div className="flex items-center justify-center">
             <svg
               width="96"
               height="2"
@@ -25,12 +25,12 @@ const Services: React.FC = () => {
               />
             </svg>
           </div>
-          <div className="flex px-2 justify-center items-center bg-[#20CFC6] bg-opacity-20 rounded-sm">
-            <h1 className="text-center text-lg  font-semibold text-[#008080]">
+          <div className="flex items-center justify-center rounded-sm bg-[#20CFC6] bg-opacity-20 px-2">
+            <h1 className="text-center text-lg font-semibold text-[#008080]">
               OUR SERVICES
             </h1>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex items-center justify-center">
             <svg
               width="96"
               height="2"
@@ -50,8 +50,8 @@ const Services: React.FC = () => {
             </svg>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-6 items-center justify-center ">
-          <h1 className="font-bold text-black text-center text-[40px]">
+        <div className="flex w-full flex-col items-center justify-center gap-6">
+          <h1 className="text-center text-[40px] font-bold text-black">
             Our Services Can Help You Grow Your Investments and Wealth
           </h1>
           <p className="text-center">

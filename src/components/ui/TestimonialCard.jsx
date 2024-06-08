@@ -30,14 +30,14 @@ export function TestimonialCard({ name, role, comment, image }) {
     <Card
       color="transparent"
       shadow={false}
-      className="w-full max-w-[26rem] border border-gray-200 rounded-lg p-2"
+      className="w-full max-w-[26rem] rounded-lg border border-gray-200 p-2"
       style={{ height: "240px" }} // Add fixed height here
     >
       <CardHeader
         color="transparent"
         floated={false}
         shadow={false}
-        className="mx-0 flex items-center gap-4  pb-6 font-inter"
+        className="font-inter mx-0 flex items-center gap-4 pb-6"
       >
         <Avatar size="lg" variant="circular" src={image} alt={name} />
         <div className="flex w-full flex-col gap-0.5">

@@ -21,7 +21,7 @@ const ServicesCard: React.FC = () => {
       list: ["Computers", "Health", "Reference"],
       icon: (
         <svg
-          className="w-12 h-12 text-green-400"
+          className="h-12 w-12 text-green-400"
           stroke="currentColor"
           viewBox="0 0 52 52"
         >
@@ -42,7 +42,7 @@ const ServicesCard: React.FC = () => {
       list: ["Computers", "Health", "Reference"],
       icon: (
         <svg
-          className="w-12 h-12 text-green-400"
+          className="h-12 w-12 text-green-400"
           stroke="currentColor"
           viewBox="0 0 52 52"
         >
@@ -63,7 +63,7 @@ const ServicesCard: React.FC = () => {
       list: ["Computers", "Health", "Reference"],
       icon: (
         <svg
-          className="w-12 h-12 text-green-400"
+          className="h-12 w-12 text-green-400"
           stroke="currentColor"
           viewBox="0 0 52 52"
         >
