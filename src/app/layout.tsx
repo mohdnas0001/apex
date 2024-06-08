@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <main className="mx-auto flex flex-col items-center justify-start p-2 md:p-4 lg:p-8">
+        <main className="mx-auto flex flex-col items-center  p-2 md:p-4 lg:p-8">
           {children}
         </main>
       </body>
