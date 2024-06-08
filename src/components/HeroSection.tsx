@@ -11,11 +11,11 @@ const animationStyles = `
 
 const HeroSection = () => {
   return (
-    <div className="flex mx-auto relative mt-10 h-full w-full">
+    <div className="relative mx-auto mt-10 flex h-full w-full">
       <style>{animationStyles}</style>
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">
-          <div className="mb-4 flex flex-row items-center justify-between gap-2 rounded-full border border-gray-200 bg-white px-4 py-1">
+          <div className="mb-4 flex flex-row items-center justify-between gap-1 bg-white px-1 py-0 md:rounded-full md:border md:border-gray-200 md:px-4 md:py-1 lg:gap-2">
             <svg
               width="7"
               height="8"
@@ -25,7 +25,7 @@ const HeroSection = () => {
             >
               <circle cx="3.5" cy="4" r="3.5" fill="#27D939" />
             </svg>
-            <p className="font-sans text-xs font-normal leading-6 text-gray-900 md:text-sm lg:text-base">
+            <p className="font-sans text-base font-normal leading-6 text-gray-900 md:text-sm lg:text-base">
               APEX Technology
             </p>
           </div>
@@ -41,7 +41,7 @@ const HeroSection = () => {
               height={161}
               className="absolute inset-0 h-full w-full"
             />
-            <button className="relative z-10 px-4 py-1 transform rounded-lg bg-black font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 text-xs md:px-8 md:py-1 md:text-xs lg:px-14 lg:py-2 lg:text-base">
+            <button className="relative z-10 transform rounded-lg bg-black px-4 py-1 text-[8px] font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 md:px-8 md:py-1 md:text-xs lg:px-14 lg:py-2 lg:text-base">
               Get Started
             </button>
           </div>

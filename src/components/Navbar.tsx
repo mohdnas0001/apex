@@ -28,14 +28,14 @@ const Navbar = () => {
             APEX
           </span>
         </a>
-        <div className="font-sans justify-between items-center gap-4 flex flex-row space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+        <div className="flex flex-row items-center justify-between gap-4 space-x-3 font-sans md:order-2 md:space-x-0 rtl:space-x-reverse">
           <p className="hidden md:block">Get Started</p>
           <button
-  type="button"
-  className="rounded-lg font-sans bg-white border border-gray-400 px-4 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
->
-  Join community
-</button>
+            type="button"
+            className="rounded-lg border border-gray-400 bg-white px-4 py-2 text-center font-sans text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          >
+            Join community
+          </button>
 
           <button
             data-collapse-toggle="navbar-sticky"
@@ -67,7 +67,7 @@ const Navbar = () => {
           className={`items-center justify-between ${isOpen ? "block" : "hidden"} w-full md:order-1 md:flex md:w-auto`}
           id="navbar-sticky"
         >
-          <ul className="mt-4 font-sans font-medium flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse">
+          <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-sans font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse">
             {links.map((link) => (
               <li key={link.name}>
                 <a
