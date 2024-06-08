@@ -10,10 +10,10 @@ const partners = [
 
 const Partners = () => {
   return (
-    <div className="relative mx-auto mt-10  w-full items-center justify-between bg-[#E3E3E3] p-2">
+    <div className="relative mx-auto mt-10 w-full items-center justify-between bg-[#E3E3E3] p-2">
       <div className="flex flex-col items-center justify-evenly lg:flex-row lg:p-8">
         <div className="items center justify-start lg:w-[300px]">
-          <h1 className="text-2xl font-bold leading-8 text-[#262626]">
+          <h1 className="text-center text-sm font-bold leading-5 text-[#262626] md:text-start md:text-2xl md:leading-8">
             1000+ Big brands trust us and work with us.
           </h1>
         </div>

@@ -11,7 +11,7 @@ const animationStyles = `
 
 const HeroSection = () => {
   return (
-    <div className="mt-18 relative mx-auto flex w-full flex-col lg:mt-10">
+    <div className="mt-18 relative mx-auto flex w-full max-w-7xl flex-col lg:mt-10">
       <style>{animationStyles}</style>
       <div className="inset-0 flex items-center justify-center md:absolute md:flex-col">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">

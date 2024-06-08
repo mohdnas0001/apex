@@ -20,6 +20,9 @@ module.exports = withMT({
       maxWidth: {
         'screen-xl': '1200px',
       },
+      boxShadow: {
+        'purple-mdlg': '0px 16px 20px rgba(128, 78, 214, 0.1), 0px 1px 3px rgba(128, 78, 214, 0.15)'
+      }
     },
   },
   plugins: [],
