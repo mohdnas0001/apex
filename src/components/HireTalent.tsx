@@ -23,7 +23,7 @@ const HireTalent = () => {
               height={61}
               className="absolute left-0 h-full object-cover"
             />
-            <button className="relative z-10 transform rounded-lg bg-black px-12 py-2 text-[8px] font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 md:px-8 md:py-1 md:text-xs lg:px-14 lg:py-2 lg:text-base">
+            <button className="relative z-10 ml-2 transform rounded-lg bg-black px-12 py-2 text-[8px] font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 md:px-8 md:py-1 md:text-xs lg:px-14 lg:py-2 lg:text-base">
               Hire Talents
             </button>
           </div>
@@ -71,7 +71,7 @@ const HireTalent = () => {
               alt="Image 4"
               width={50}
               height={50}
-              className="absolute left-1/2 top-1/3  h-24 w-24 -translate-x-1/2 transform  md:h-14 md:w-14 lg:h-16 lg:w-16"
+              className="absolute left-1/2 top-1/3 h-24 w-24 -translate-x-1/2 transform md:h-14 md:w-14 lg:h-16 lg:w-16"
             />
             <Image
               src="/Ellipse5.png"

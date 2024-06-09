@@ -1,0 +1,42 @@
+import React from "react";
+import Image from "next/image";
+
+const Newsletter = () => {
+  return (
+    <div className="relative mx-auto mt-10 h-auto w-full max-w-7xl px-6 pt-10 md:mt-0 md:px-20">
+      <div className="flex w-full flex-col items-center justify-center">
+        <div className="w-full flex-col items-center justify-between font-sans">
+          <p className="my-2 text-center text-[34px] font-semibold text-gray-900">
+            Get access to our pool of Resources
+          </p>
+          <p className="mt-4 text-center text-base font-normal leading-6">
+            Discover how our clients have achieved remarkable success with
+            Apex&apos;s <br /> tailored strategies. Read about their journeys
+            and get inspired by their <br /> accomplishments.
+          </p>
+        </div>
+        <div className="flex w-full flex-row items-center justify-center gap-4">
+          <input
+            type="email"
+            placeholder="Enter your email address to get started"
+            className="w-full max-w-xs rounded-lg border border-gray-400 bg-white px-2 py-1 font-sans text-xs font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:max-w-sm md:py-3 lg:text-sm"
+          />
+          <div className="relative flex h-20 items-center justify-center overflow-hidden rounded-lg md:h-28 lg:h-44">
+            <Image
+              src="/Blur.svg"
+              alt="Background Image"
+              width={353}
+              height={161}
+              className="absolute inset-0 h-full w-full"
+            />
+            <button className="relative z-10 transform rounded-lg bg-black px-4 py-1 text-[8px] font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 md:px-8 md:py-1 md:text-xs lg:px-14 lg:py-2 lg:text-base">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Newsletter;

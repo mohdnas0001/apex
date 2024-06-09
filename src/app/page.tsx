@@ -1,6 +1,8 @@
 import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import HireTalent from "@/components/HireTalent";
+import Newsletter from "@/components/Newsletter";
 import Partners from "@/components/Partners";
 import TalentAcquisition from "@/components/TalentAcquisition";
 import Team from "@/components/Team";
@@ -18,6 +20,8 @@ export default function Home() {
       <Testimonial />
       <Team />
       <HireTalent />
+      <Newsletter />
+      <Footer />
     </main>
   );
 }
