@@ -11,7 +11,7 @@ const animationStyles = `
 
 const HeroSection = () => {
   return (
-    <div className="mt-20 relative mx-auto flex w-full max-w-7xl flex-col lg:mt-10">
+    <div className="relative mx-auto mt-20 flex w-full max-w-7xl flex-col lg:mt-10">
       <style>{animationStyles}</style>
       <div className="inset-0 flex items-center justify-center md:absolute md:flex-col">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">
@@ -29,7 +29,7 @@ const HeroSection = () => {
               APEX Technology
             </p>
           </div>
-          <h2 className="text-center text-xl font-sans font-medium text-gray-900 md:block md:text-2xl lg:w-[832px] lg:text-5xl">
+          <h2 className="text-center font-sans text-xl font-medium text-gray-900 md:block md:text-2xl lg:w-[832px] lg:text-5xl">
             We offer a seamlessly integrated suite <br /> of technology and
             security solutions to <br /> empower your organization
           </h2>

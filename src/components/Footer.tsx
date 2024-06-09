@@ -3,45 +3,45 @@ import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900 lg:mt-10">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer className="relative bg-white dark:bg-gray-900 lg:mt-10">
+      <div className="relative mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <div className="flex w-full flex-col">
               <p className="font-sans text-base font-bold leading-10">APEX</p>
-              <p className="mb-4 font-sans text-xs md:text-lg font-medium">
+              <p className="mb-4 font-sans text-xs font-medium md:text-lg">
                 For further enquiry please reach out on hi@getapex.tech
               </p>
             </div>
-             <div className="flex w-[120px] justify-start items-center ">
-      <div className="w-1/3 ">
-        <Image
-          src="/X.svg"
-          alt="Description for Image 1"
-          width={30}
-          height={30}
-          className="rounded-lg"
-        />
-      </div>
-      <div className="w-1/3 ">
-       <Image
-          src="/Linkedin.svg"
-          alt="Description for Image 1"
-          width={30}
-          height={30}
-          className="rounded-lg"
-        />
-      </div>
-      <div className="w-1/3 ">
-        <Image
-          src="/Facebook.svg"
-          alt="Description for Image 1"
-          width={30}
-          height={30}
-          className="rounded-lg"
-        />
-      </div>
-    </div>
+            <div className="flex w-[120px] items-center justify-start">
+              <div className="w-1/3">
+                <Image
+                  src="/X.svg"
+                  alt="Description for Image 1"
+                  width={30}
+                  height={30}
+                  className="rounded-lg"
+                />
+              </div>
+              <div className="w-1/3">
+                <Image
+                  src="/Linkedin.svg"
+                  alt="Description for Image 2"
+                  width={30}
+                  height={30}
+                  className="rounded-lg"
+                />
+              </div>
+              <div className="w-1/3">
+                <Image
+                  src="/Facebook.svg"
+                  alt="Description for Image 3"
+                  width={30}
+                  height={30}
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
             <div className="font-sans">
@@ -50,22 +50,22 @@ const Footer: React.FC = () => {
               </h2>
               <ul className="font-sans text-base font-medium text-black dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     About Us
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Teams
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Innovations
                   </a>
                 </li>
                 <li>
-                  <a href="" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Impact
                   </a>
                 </li>
@@ -77,17 +77,17 @@ const Footer: React.FC = () => {
               </h2>
               <ul className="font-sans text-base font-medium text-black dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Join hiring pool
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Recruitment
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Cyber Security
                   </a>
                 </li>
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <a href="#" className="hover:underline">
-                    Apex Commuinity
+                    Apex Community
                   </a>
                 </li>
               </ul>
@@ -116,10 +116,10 @@ const Footer: React.FC = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="font-sans text-base dark:text-gray-400 sm:text-center">
             © 2024{" "}
-            <a href="" className="hover:underline">
+            <a href="#" className="hover:underline">
               Apex Technologies™
             </a>
-            <br className=" block md:hidden" />. All Rights Reserved.
+            . All Rights Reserved.
           </span>
           <div className="mt-4 flex items-center gap-2 font-sans text-base sm:mt-0 sm:justify-center">
             <p>Terms</p>
@@ -132,7 +132,6 @@ const Footer: React.FC = () => {
             >
               <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
             </svg>
-
             <p>Privacy</p>
           </div>
         </div>
@@ -140,4 +139,5 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
+
 export default Footer;

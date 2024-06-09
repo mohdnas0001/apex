@@ -57,11 +57,11 @@ const FAQ: React.FC = () => {
                       alt={`icon-${index}`}
                       width={40}
                       height={40}
-                      className="w-auto h-auto"
+                      className="h-auto w-auto"
                       sizes="(max-width: 640px) 100vw, 40px" // Adjusts image size based on screen size
                     />
 
-                    <span className="font-sans text-lg md:text-base font-bold">
+                    <span className="font-sans text-lg font-bold md:text-base">
                       {faq.question}
                     </span>
                   </div>

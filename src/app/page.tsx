@@ -11,7 +11,7 @@ import WhatWeDo from "@/components/WhatWeDo";
 
 export default function Home() {
   return (
-    <main className="mt-16 flex h-screen w-full max-w-7xl flex-col lg:mt-0">
+    <main className="mt-16 flex h-full w-full max-w-7xl flex-col lg:mt-0">
       <HeroSection />
       <Banner />
       <Partners />
@@ -21,7 +21,6 @@ export default function Home() {
       <Team />
       <HireTalent />
       <Newsletter />
-      <Footer />
     </main>
   );
 }

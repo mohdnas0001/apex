@@ -6,16 +6,17 @@ const Newsletter = () => {
     <div className="relative mx-auto mt-10 h-auto w-full max-w-7xl px-6 pt-10 md:mt-0 md:px-20">
       <div className="flex w-full flex-col items-center justify-center">
         <div className="w-full flex-col items-center justify-between font-sans">
-          <p className="text-xl font-bold   md:my-2 text-center md:text-lg lg:text-[34px] lg:font-semibold text-gray-900">
+          <p className="text-center text-xl font-bold text-gray-900 md:my-2 md:text-lg lg:text-[34px] lg:font-semibold">
             Get access to our pool of Resources
           </p>
           <p className="mt-2 text-center text-base font-normal leading-6">
             Discover how our clients have achieved remarkable success with
-            Apex&apos;s <br className="hidden md:block" /> tailored strategies. Read about their journeys
-            and get inspired by their <br className="hidden md:block" /> accomplishments.
+            Apex&apos;s <br className="hidden md:block" /> tailored strategies.
+            Read about their journeys and get inspired by their{" "}
+            <br className="hidden md:block" /> accomplishments.
           </p>
         </div>
-        <div className="flex flex-col w-full mt-6 lg:flex-row items-center justify-center gap-4 lg:mt-0">
+        <div className="mt-6 flex w-full flex-col items-center justify-center gap-4 lg:mt-0 lg:flex-row">
           <input
             type="email"
             placeholder="Enter your email address to get started"

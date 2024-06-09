@@ -3,8 +3,7 @@ import Image from "next/image";
 
 const Testimonial = () => {
   return (
-    <div className="relative mx-auto mt-10 h-auto w-full max-w-7xl px-6 pt-10 md:mt-0 md:px-20">
-      {/* Green rectangle background, hidden on smaller screens */}
+    <div className="relative mx-auto mt-10  w-full max-w-7xl px-6 pt-10 md:mt-0 md:px-20">
       <div className="absolute bottom-0 right-0 hidden h-[150px] w-full bg-[#112106] lg:block"></div>
 
       <div className="relative flex w-full flex-col items-center justify-center">
@@ -53,7 +52,7 @@ const Testimonial = () => {
               height={280}
               alt="testimoniacal"
               src="/Testimonial.png"
-              className="w-[200px] h-auto md:w-[325px]" // Adjust width based on screen size
+              className="h-auto w-[200px] md:w-[325px]" // Adjust width based on screen size
             />
           </div>
         </div>
