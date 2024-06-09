@@ -68,8 +68,8 @@ const WhatWeDo = () => {
   return (
     <div className="relative mx-auto my-10 h-[900px] w-full items-center justify-between bg-white p-4 lg:p-10">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-center font-sans text-base font-semibold text-gray-900 md:text-2xl lg:text-3xl lg:leading-10">
-          Take off the hassles of finding <br />
+        <h1 className="text-center font-sans text-xl font-semibold text-gray-900 md:text-2xl lg:text-3xl lg:leading-10">
+          Take off the hassles of finding <br className="hidden md:block" />
           the right solution providers
         </h1>
         <div className="mt-8 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2 lg:w-[600px] lg:grid-cols-2">

@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div className="mb-6 md:mb-0">
             <div className="flex w-full flex-col">
               <p className="font-sans text-base font-bold leading-10">APEX</p>
-              <p className="font-sans text-lg font-medium">
+              <p className="mb-4 font-sans text-xs md:text-lg font-medium">
                 For further enquiry please reach out on hi@getapex.tech
               </p>
             </div>
@@ -116,10 +116,10 @@ const Footer: React.FC = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="font-sans text-base dark:text-gray-400 sm:text-center">
             © 2024{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a href="" className="hover:underline">
               Apex Technologies™
             </a>
-            . All Rights Reserved.
+            <br className=" block md:hidden" />. All Rights Reserved.
           </span>
           <div className="mt-4 flex items-center gap-2 font-sans text-base sm:mt-0 sm:justify-center">
             <p>Terms</p>

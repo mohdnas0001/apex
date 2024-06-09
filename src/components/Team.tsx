@@ -21,7 +21,7 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
         width={176}
         height={176}
       />
-      <div className="mt-4 flex h-48 w-full flex-col items-center">
+      <div className="mt-4 flex md:h-48 w-full flex-col items-center">
         <p className="mt-4 font-sans text-lg font-bold md:text-xl">{name}</p>
         <p className="font-sans text-base text-gray-600 md:text-lg">
           {position}
@@ -49,7 +49,7 @@ const Team: React.FC = () => {
           Our Board of Directors
         </h1>
       </div>
-      <div className="flex flex-col items-center justify-evenly gap-8 md:flex-row">
+      <div className="flex flex-col items-center justify-evenly md:gap-8 md:flex-row">
         {directors.map((director, index) => (
           <DirectorCard
             key={index}
