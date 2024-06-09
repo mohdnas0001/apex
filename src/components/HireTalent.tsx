@@ -6,22 +6,22 @@ const HireTalent = () => {
     <div className="relative mx-auto my-10 h-auto w-full max-w-7xl items-center justify-between bg-[#ECF5FF] lg:p-10">
       <div className="flex w-full flex-col justify-between gap-10 lg:flex-row">
         <div className="mt-10 flex flex-col items-start justify-center gap-4 p-4 lg:w-[531px]">
-          <p className="text-start font-sans text-4xl font-semibold leading-tight">
+          <p className=" text-center md:text-start font-sans text-xl md:text-4xl font-semibold leading-tight">
             We streamline the process of hiring exceptional teams for your
             projects.
           </p>
-          <p className="text-start font-sans text-base font-normal">
+          <p className="text-center md:text-start font-sans text-base md:text-base font-normal">
             Our platform connects you with skilled professionals who are
             perfectly matched to your needs, ensuring your business achieves its
             goals with efficiency and expertise.
           </p>
-          <div className="relative flex h-12 w-full items-center justify-start overflow-hidden rounded-lg md:h-12 lg:h-28">
+          <div className="relative flex h-12 w-full items-center justify-center md:justify-start overflow-hidden rounded-lg md:h-12 lg:h-28">
             <Image
               src="/Blur.svg"
               alt="Background Image"
               width={153}
-              height={61}
-              className="absolute left-0 h-full object-cover"
+              height={161}
+              className="absolute md:left-0 h-full object-cover"
             />
             <button className="relative z-10 ml-2 transform rounded-lg bg-black px-12 py-2 text-[8px] font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 md:px-8 md:py-1 md:text-xs lg:px-14 lg:py-2 lg:text-base">
               Hire Talents
