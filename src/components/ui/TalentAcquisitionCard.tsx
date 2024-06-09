@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -37,7 +38,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <main className="w-full">
+    <main className="w-full p-4">
       <div className="my-2 flex items-start justify-center">
         <div className="my-1 w-full">
           <ul className="flex flex-col">
@@ -56,9 +57,11 @@ const FAQ: React.FC = () => {
                       alt={`icon-${index}`}
                       width={40}
                       height={40}
+                      className="w-auto h-auto"
+                      sizes="(max-width: 640px) 100vw, 40px" // Adjusts image size based on screen size
                     />
 
-                    <span className="font-sans text-base font-bold">
+                    <span className="font-sans text-lg md:text-base font-bold">
                       {faq.question}
                     </span>
                   </div>
