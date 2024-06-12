@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Newsletter = () => {
   return (
-    <div className="relative mx-auto mt-10 h-auto w-full max-w-7xl px-6 pt-10 md:mt-0 md:px-20">
+    <div className="relative mx-auto mt-10 h-auto w-full max-w-7xl px-6  md:mt-0 md:px-20">
       <div className="flex w-full flex-col items-center justify-center">
         <div className="w-full flex-col items-center justify-between font-sans">
         <h1 className="text-center w-full font-sans text-lg font-medium text-gray-900 md:block md:text-2xl  lg:text-4xl">

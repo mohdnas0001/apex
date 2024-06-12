@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
+const handle = "get_apex";
+
+  const twitterLink = `https://twitter.com/${handle}`;
+  const facebookLink = `https://www.facebook.com/${handle}`;
+  const instagramLink = `https://www.instagram.com/${handle}`;
+
 const Footer: React.FC = () => {
   return (
     <footer className="relative bg-white dark:bg-gray-900 lg:mt-10">
@@ -15,15 +21,19 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex w-[120px] items-center justify-start">
               <div className="w-1/3">
+                <a href={twitterLink} target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/X.svg"
                   alt="Description for Image 1"
                   width={30}
                   height={30}
                   className="rounded-lg"
-                />
+                  />
+                  </a>
               </div>
               <div className="w-1/3">
+                <a href={instagramLink} target="_blank" rel="noopener noreferrer">
+
                 <Image
                   src="/Linkedin.svg"
                   alt="Description for Image 2"
@@ -31,8 +41,11 @@ const Footer: React.FC = () => {
                   height={30}
                   className="rounded-lg"
                 />
+                </a>
               </div>
               <div className="w-1/3">
+                <a href={facebookLink} target="_blank" rel="noopener noreferrer">
+
                 <Image
                   src="/Facebook.svg"
                   alt="Description for Image 3"
@@ -40,6 +53,7 @@ const Footer: React.FC = () => {
                   height={30}
                   className="rounded-lg"
                 />
+                </a>
               </div>
             </div>
           </div>

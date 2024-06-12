@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -32,7 +31,7 @@ const Navbar = () => {
           <p className="hidden md:block">Get Started</p>
           <button
             type="button"
-            className="rounded-lg border border-gray-400 bg-white px-2 py-1 text-center font-sans text-xs font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:px-4 md:py-2 lg:text-sm"
+            className="hidden md:block rounded-lg border border-gray-400 bg-white px-2 py-1 text-center font-sans text-xs font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:px-4 md:py-2 lg:text-sm"
           >
             Join community
           </button>
@@ -79,6 +78,14 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <button
+                type="button"
+                className="rounded-lg border border-gray-400 bg-white px-2 py-1 text-center font-sans text-xs font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:px-4 md:py-2 lg:text-sm"
+              >
+                Join community
+              </button>
+            </li>
           </ul>
         </div>
       </div>
