@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const animationStyles = `
   @keyframes dash {
@@ -35,8 +35,10 @@ const textMotion = {
 };
 
 const HeroSection = () => {
+  const [ref, inView] = useInView({ triggerOnce: true });
+
   return (
-    <div className="relative mx-auto mt-20 flex w-full max-w-7xl flex-col lg:mt-10">
+    <div className="relative mx-auto mt-20 flex w-full max-w-7xl flex-col lg:mt-10" ref={ref}>
       <style>{animationStyles}</style>
       <div className="absolute inset-0 flex items-center justify-center md:flex-col">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">

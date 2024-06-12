@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 // ServiceCard component
@@ -14,25 +15,42 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   serviceDescription,
 }) => {
   return (
-    <div className="w-full justify-center rounded-lg border border-gray-300 bg-white p-4 shadow-purple-mdlg md:p-6 lg:p-8">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      className="w-full justify-center rounded-lg border border-gray-300 bg-white p-4 shadow-purple-mdlg md:p-6 lg:p-8"
+    >
       <div className="start flex flex-col items-start justify-center gap-2">
-        <Image
-          src={icon}
-          alt={serviceName}
-          width={30}
-          height={30}
-          className="mr-4 h-10 w-10"
-        />
-        <div className="flex flex-col justify-between gap-1">
-          <h3 className="text-base font-semibold text-gray-900 lg:text-lg">
-            {serviceName}
-          </h3>
-          <p className="text-xs text-gray-600 lg:text-sm">
-            {serviceDescription}
-          </p>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <Image
+            src={icon}
+            alt={serviceName}
+            width={30}
+            height={30}
+            className="mr-4 h-10 w-10"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <div className="flex flex-col justify-between gap-1">
+            <h3 className="text-base font-semibold text-gray-900 lg:text-lg">
+              {serviceName}
+            </h3>
+            <p className="text-xs text-gray-600 lg:text-sm">
+              {serviceDescription}
+            </p>
+          </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

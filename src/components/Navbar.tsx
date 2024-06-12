@@ -29,12 +29,12 @@ const Navbar = () => {
         </a>
         <div className="flex flex-row items-center justify-between space-x-3 font-sans md:order-2 md:space-x-0 lg:gap-2 rtl:space-x-reverse">
           <p className="hidden md:block">Get Started</p>
-          <button
+          {/* <button
             type="button"
             className="hidden md:block rounded-lg border border-gray-400 bg-white px-2 py-1 text-center font-sans text-xs font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:px-4 md:py-2 lg:text-sm"
           >
             Join community
-          </button>
+          </button> */}
 
           <button
             data-collapse-toggle="navbar-sticky"
@@ -79,12 +79,12 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <button
+              {/* <button
                 type="button"
-                className="rounded-lg border border-gray-400 bg-white px-2 py-1 text-center font-sans text-xs font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:px-4 md:py-2 lg:text-sm"
+                className="rounded-lg border border-gray-400 bg-white px-2 py-1 text-center font-sans text-xs font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden "
               >
                 Join community
-              </button>
+              </button> */}
             </li>
           </ul>
         </div>

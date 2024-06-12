@@ -32,7 +32,7 @@ const Home = () => {
     triggerOnce: true,
   });
   const [refHireTalent, inViewHireTalent] = useInView({ triggerOnce: true });
-    const [refTeam, inTeam] = useInView({ triggerOnce: true });
+    const [refTeam, inViewTeam] = useInView({ triggerOnce: true });
 
   const [refNewsletter, inViewNewsletter] = useInView({ triggerOnce: true });
 
@@ -89,7 +89,7 @@ const Home = () => {
       </motion.div>
       <motion.div
         ref={refTeam}
-        animate={{ opacity: inViewNewsletter ? 1 : 0 }}
+        animate={{ opacity: inViewTeam? 1 : 0 }}
         transition={{ duration: 0.5 }}
       >
         <Team/>
