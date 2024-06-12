@@ -1,18 +1,20 @@
-import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import HireTalent from "@/components/HireTalent";
-import Newsletter from "@/components/Newsletter";
-import Partners from "@/components/Partners";
-import TalentAcquisition from "@/components/TalentAcquisition";
-import Team from "@/components/Team";
-import Testimonial from "@/components/Testimonial";
-import TestimonialSection from "@/components/TestimonialSection";
-import WhatWeDo from "@/components/WhatWeDo";
+import dynamic from 'next/dynamic';
+
+const Banner = dynamic(() => import('@/components/Banner'));
+const Footer = dynamic(() => import('@/components/Footer'));
+const HeroSection = dynamic(() => import('@/components/HeroSection'));
+const HireTalent = dynamic(() => import('@/components/HireTalent'));
+const Newsletter = dynamic(() => import('@/components/Newsletter'));
+const Partners = dynamic(() => import('@/components/Partners'));
+const TalentAcquisition = dynamic(() => import('@/components/TalentAcquisition'));
+const Team = dynamic(() => import('@/components/Team'));
+const Testimonial = dynamic(() => import('@/components/Testimonial'));
+const TestimonialSection = dynamic(() => import('@/components/TestimonialSection'));
+const WhatWeDo = dynamic(() => import('@/components/WhatWeDo'));
 
 export default function Home() {
   return (
-    <main className="mt-16 flex h-full w-full max-w-7xl flex-col lg:mt-0">
+    <main className="flex h-full w-full max-w-7xl flex-col">
       <HeroSection />
       <Banner />
       <Partners />

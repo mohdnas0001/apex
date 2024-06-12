@@ -41,38 +41,51 @@ const services: ServiceCardProps[] = [
   {
     serviceName: "Web & App Development",
     serviceDescription:
-      "Our design team crafts compelling visuals and user interfaces that enhance your brand identity and user experience.",
+      "We create user-friendly web applications and mobile apps to elevate your digital presence, drive user engagement, and fuel business growth.",
     icon: "/Web.svg",
   },
   {
-    serviceName: "Security Features",
+    serviceName: "Cybersecurity Solutions",
     serviceDescription:
-      "Our design team crafts compelling visuals and user interfaces that enhance your brand identity and user experience.",
+      "Safeguard your critical data and infrastructure from evolving cyber threats with our robust security solutions.",
     icon: "/Security.svg",
   },
   {
-    serviceName: "Insights",
+    serviceName: "Network Design & Implementation",
     serviceDescription:
-      "Our design team crafts compelling visuals and user interfaces that enhance your brand identity and user experience.",
+      "Ensure reliable and secure connectivity with our expert network design, implementation, and maintenance services.",
     icon: "/Insights.svg",
   },
   {
-    serviceName: "Fast and Reliable",
+    serviceName: "Creative Design",
     serviceDescription:
-      "Our design team crafts compelling visuals and user interfaces that enhance your brand identity and user experience.",
-    icon: "/Fast.svg",
+      "Our design team crafts compelling visuals and user interfaces that enhance your brand identity and user experience. ",
+    icon: "/Security.svg",
   },
+  {
+    serviceName: "Digital Transformation",
+    serviceDescription:
+      "We guide you through a strategic digital transformation journey, optimizing processes, maximizing the value of technology, and helping you adapt to the changing digital landscape. ",
+    icon: "/Insights.svg",
+  },
+  {
+    serviceName: "AI & Automation",
+    serviceDescription:
+      "We integrate AI solutions to automate tasks, generate data-driven insights, improve decision-making, and unlock new possibilities for efficiency and productivity. ",
+    icon: "/Security.svg",
+  },
+  
 ];
 
 const WhatWeDo = () => {
   return (
-    <div className="relative mx-auto my-10 h-[900px] w-full items-center justify-between bg-white p-4 lg:p-10">
+    <div className="relative mx-auto my-10 h-full w-full items-center justify-between bg-white p-4 lg:p-10">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-center font-sans text-xl font-semibold text-gray-900 md:text-2xl lg:text-3xl lg:leading-10">
           Take off the hassles of finding <br className="hidden md:block" />
           the right solution providers
         </h1>
-        <div className="mt-8 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2 lg:w-[600px] lg:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-3 lg:w-full lg:grid-cols-3">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
