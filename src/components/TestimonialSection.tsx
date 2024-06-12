@@ -13,7 +13,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     feedback:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+      "Apex has been instrumental in our software development process. It provides comprehensive solutions tailored to our needs, allowing us to deliver high-quality software efficiently.",
     clientName: "Micheal Gough",
     clientPosition: "CEO at Google",
     clientImage:
@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
   },
   {
     feedback:
-      "I've been using Flowbite for a few months now and it has significantly improved my workflow. The design system is comprehensive and easy to use.",
+      "With Apex, we can rest assured that our organization's cybersecurity is in safe hands. Its advanced security features and robust solutions help us protect our data and systems effectively.",
     clientName: "Jane Doe",
     clientPosition: "CTO at Microsoft",
     clientImage:
@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
   },
   {
     feedback:
-      "The predesigned components and templates are a lifesaver. Flowbite allows me to focus on developing the core features of my application.",
+      "Apex is more than just a software platform; it's a comprehensive solution for all our software and cybersecurity needs. Its versatility and reliability make it indispensable for our organization.",
     clientName: "John Smith",
     clientPosition: "Lead Developer at Amazon",
     clientImage:

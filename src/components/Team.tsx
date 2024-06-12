@@ -33,12 +33,12 @@ const DirectorCard: React.FC<DirectorCardProps> = ({
 
 const Team: React.FC = () => {
   const directors = [
-    { name: "Farid Jibril Farouk", position: "MD/CEO", imageUrl: "/Team1.png" },
-    { name: "Ibrahim Babangida", position: "CTO", imageUrl: "/Team2.png" },
+    { name: "Farid Jibril Farouk", position: "MD/CEO", imageUrl: "/md.jpg" },
+    { name: "Ibrahim Babangida", position: "CTO", imageUrl: "/cto.jpg" },
     {
       name: "Mubarak Aminu",
       position: "Head of Project Management",
-      imageUrl: "/Team3.png",
+      imageUrl: "/member.jpg",
     },
   ];
 
