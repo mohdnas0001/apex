@@ -14,21 +14,21 @@ const FAQ: React.FC = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "Recruitment Services",
+      question: "Technology and Commuinications",
       answer:
-        "Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+        "Custom Software Development: We deliver custom software solutions tailored to your specific needs, from enterprise-level applications to mobile apps.",
       icon: "/RecruitmentServices.svg",
     },
     {
-      question: "Outsourcing Services",
+      question: "Talent acquisition & Workforce solutions",
       answer:
-        "Once shipped, you’ll get a confirmation email that includes a tracking number and additional information regarding tracking your order.",
+        "Our recruitment specialists can help you find and attract top talent for your technology and security needs. We offer a range of IT outsourcing services, allowing you to access specialized skills and expertise without the burden of managing in-house staff.",
       icon: "/OutsourcingServices.svg",
     },
     {
-      question: "Onboarding Services",
+      question: "Security and Safety Solutions",
       answer:
-        "We allow the return of all items within 30 days of your original order’s date. If you’re interested in returning your items, send us an email with your order number and we’ll ship a return label.",
+        "Enhance situational awareness and deter crime with our advanced surveillance systems, including CCTV cameras and access control solutions. Protect your property and assets with integrated alarm systems that trigger immediate alerts and dispatch response teams. ",
       icon: "/OnboardingServices.svg",
     },
   ];

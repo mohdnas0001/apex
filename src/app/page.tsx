@@ -7,6 +7,7 @@ import Partners from "@/components/Partners";
 import TalentAcquisition from "@/components/TalentAcquisition";
 import Team from "@/components/Team";
 import Testimonial from "@/components/Testimonial";
+import TestimonialSection from "@/components/TestimonialSection";
 import WhatWeDo from "@/components/WhatWeDo";
 
 export default function Home() {
@@ -17,8 +18,7 @@ export default function Home() {
       <Partners />
       <WhatWeDo />
       <TalentAcquisition />
-      <Testimonial />
-      <Team />
+      <TestimonialSection />
       <HireTalent />
       <Newsletter />
     </main>

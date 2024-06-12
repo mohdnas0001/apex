@@ -14,7 +14,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <html lang="en">
       <body className="">
         <Navbar />
-        <main className="flex-grow h-full mx-auto flex flex-col items-center p-2 md:p-4 lg:p-8">
+        <main className="mx-auto flex h-full flex-grow flex-col items-center p-2 md:p-4 lg:p-8">
           {children}
         </main>
         <Footer />

@@ -13,9 +13,9 @@ const HeroSection = () => {
   return (
     <div className="relative mx-auto mt-20 flex w-full max-w-7xl flex-col lg:mt-10">
       <style>{animationStyles}</style>
-      <div className="inset-0 flex items-center justify-center md:absolute md:flex-col">
+      <div className="absolute inset-0 flex items-center justify-center md:flex-col">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">
-          <div className="mb-4 flex flex-row items-center justify-between gap-1 rounded-full border border-gray-200 bg-white px-3 py-1 md:px-4 md:py-1 lg:gap-2">
+          <div className="mb-4 flex flex-row items-center justify-between gap-1 rounded-full bg-white px-[4px] md:border md:border-gray-200 md:px-4 md:py-1 lg:gap-2">
             <svg
               width="7"
               height="8"
@@ -25,23 +25,23 @@ const HeroSection = () => {
             >
               <circle cx="3.5" cy="4" r="3.5" fill="#27D939" />
             </svg>
-            <p className="font-sans text-xs font-normal leading-6 text-gray-900 md:text-sm lg:text-base">
+            <p className="font-sans text-[6px] font-normal leading-6 text-gray-900 md:text-sm lg:text-base">
               APEX Technology
             </p>
           </div>
-          <h2 className="text-center font-sans text-xl font-medium text-gray-900 md:block md:text-2xl lg:w-[832px] lg:text-5xl">
+          <h2 className="text-center font-sans text-[8px] font-medium text-gray-900 md:block md:text-2xl lg:w-[832px] lg:text-5xl">
             We offer a seamlessly integrated suite <br /> of technology and
             security solutions to <br /> empower your organization
           </h2>
-          <div className="relative flex h-20 w-full items-center justify-center overflow-hidden rounded-lg md:h-28 lg:h-44">
+          <div className="relative flex h-10 w-full items-center justify-center overflow-hidden rounded-lg md:h-28 lg:h-44">
             <Image
               src="/Blur.svg"
               alt="Background Image"
               width={353}
               height={161}
-              className="absolute inset-0 h-full w-full"
+              className="absolute inset-0 h-auto w-full md:h-full"
             />
-            <button className="relative z-10 transform rounded-lg bg-black px-12 py-3 text-[8px] font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 md:px-8 md:py-1 md:text-xs lg:px-14 lg:py-2 lg:text-base">
+            <button className="relative z-10 mt-[2px] transform rounded-lg bg-black px-6 py-[2px] text-[8px] font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 md:px-8 md:py-1 md:text-xs lg:px-14 lg:py-2 lg:text-base">
               Get Started
             </button>
           </div>

@@ -28,7 +28,7 @@ const HireTalent = () => {
             </button>
           </div>
         </div>
-        <div className="relative w-full lg:w-auto">
+        <div className="hidden md:block lg:w-auto">
           <div className="relative h-auto w-full">
             <Image
               src="/HireTalent.svg"
