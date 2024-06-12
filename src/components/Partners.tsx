@@ -3,10 +3,14 @@ import Image from "next/image";
 import "../app/globals.css";
 
 const partners = [
-  { id: 1, name: "Google", logo: "/Google.svg" },
-  { id: 2, name: "Heinz", logo: "/Heinz.svg" },
-  { id: 3, name: "Netflix", logo: "/Netflix.svg" },
-  { id: 4, name: "PayPal", logo: "/PayPal.svg" },
+  { id: 1, name: "Kebbi", logo: "/Kebbi.png" },
+  { id: 3, name: "Google", logo: "/Google.svg" },
+      { id: 2, name: "Spendo", logo: "/Spendo.png" },
+
+  { id: 4, name: "Heinz", logo: "/Heinz.svg" },
+  { id: 5, name: "Netflix", logo: "/Netflix.svg" },
+  { id: 6, name: "PayPal", logo: "/PayPal.svg" },
+
 ];
 
 const Partners = () => {
@@ -23,7 +27,7 @@ const Partners = () => {
             {partners.concat(partners).map((partner, index) => (
               <div
                 key={index}
-                className="flex w-full items-center justify-center"
+                className="flex w-full items-center my-2 justify-center"
               >
                 <Image
                   src={partner.logo}

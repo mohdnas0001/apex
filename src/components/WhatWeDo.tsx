@@ -74,14 +74,13 @@ const services: ServiceCardProps[] = [
       "We integrate AI solutions to automate tasks, generate data-driven insights, improve decision-making, and unlock new possibilities for efficiency and productivity. ",
     icon: "/Security.svg",
   },
-  
 ];
 
 const WhatWeDo = () => {
   return (
     <div className="relative mx-auto my-10 h-full w-full items-center justify-between bg-white p-4 lg:p-10">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-center font-sans text-xl font-semibold text-gray-900 md:text-2xl lg:text-3xl lg:leading-10">
+        <h1 className="text-center font-sans text-lg font-medium text-gray-900 md:block md:text-2xl lg:w-[832px] lg:text-5xl">
           Take off the hassles of finding <br className="hidden md:block" />
           the right solution providers
         </h1>

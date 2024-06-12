@@ -46,7 +46,9 @@ const TestimonialSectionItem: React.FC<
       animate={{ opacity: isVisible ? 1 : 0.5, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
       transition={{ duration: 0.5 }}
-      className={`mb-4 w-full rounded p-4 shadow-lg ${isVisible ? "" : "blur-sm"}`}
+      className={`mb-4 w-full md:rounded-lg border border-gray-300 p-4 md:shadow-lg ${
+        isVisible ? "" : "blur-sm"
+      }`}
     >
       <figure className="mx-auto max-w-screen-md">
         <svg
@@ -110,7 +112,7 @@ const TestimonialSection: React.FC = () => {
 
   return (
     <div className="relative mx-auto mt-10 w-full items-center justify-between overflow-hidden p-2">
-      <div className="relative flex w-full flex-col items-center justify-center">
+      <div className="relative my-6 flex w-full flex-col items-center justify-center">
         <div className="mb-4 flex w-fit flex-row items-center justify-center gap-1 rounded-full border border-gray-200 bg-white px-2 py-0 md:px-4 md:py-1 lg:gap-2">
           <svg
             width="7"
@@ -121,13 +123,13 @@ const TestimonialSection: React.FC = () => {
           >
             <circle cx="3.5" cy="4" r="3.5" fill="#27D939" />
           </svg>
-          <p className="font-sans text-[8px] font-normal leading-6 text-gray-900 md:text-sm lg:text-base">
+          <p className="font-sans text-[8px] font-normal leading-6 text-gray-900 md:text-sm lg:text-sm">
             214 people have something good to say about Apex
           </p>
         </div>
-        <p className="text-center font-sans text-2xl font-semibold leading-8 text-gray-900 md:text-4xl md:leading-10">
+        <h1 className="text-center font-sans text-lg font-medium text-gray-900 md:block md:text-2xl lg:w-[832px] lg:text-4xl">
           Customers shared their love for Apex
-        </p>
+        </h1>
       </div>
       <div className="flex w-full flex-col items-center justify-center p-8 sm:flex-row">
         <div className="flex w-full justify-center overflow-hidden">
