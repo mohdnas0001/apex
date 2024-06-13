@@ -52,13 +52,13 @@ const Home = () => {
       >
         <Banner />
       </motion.div>
-      <motion.div
+      {/* <motion.div
         ref={refPartners}
         animate={{ opacity: inViewPartners ? 1 : 0 }}
         transition={{ duration: 0.5 }}
       >
         <Partners />
-      </motion.div>
+      </motion.div> */}
       <motion.div
         ref={refWhatWeDo}
         animate={{ opacity: inViewWhatWeDo ? 1 : 0 }}
