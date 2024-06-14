@@ -38,12 +38,15 @@ const HeroSection = () => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
-    <div className="relative mx-auto mt-20 flex w-full max-w-7xl flex-col lg:mt-10" ref={ref}>
+    <div
+      className="relative mx-auto mt-20 flex w-full max-w-7xl flex-col lg:mt-10"
+      ref={ref}
+    >
       <style>{animationStyles}</style>
       <div className="absolute inset-0 flex items-center justify-center md:flex-col">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">
           <motion.div
-            className="md:mb-4 flex flex-row items-center justify-between gap-1 rounded-full bg-white px-[4px] md:border md:border-gray-200 md:px-4 md:py-1 lg:gap-2"
+            className="flex flex-row items-center justify-between gap-1 rounded-full bg-white px-[4px] md:mb-4 md:border md:border-gray-200 md:px-4 md:py-1 lg:gap-2"
             {...textMotion}
           >
             <svg
@@ -60,7 +63,7 @@ const HeroSection = () => {
             </p>
           </motion.div>
           <motion.h2
-            className="text-center font-sans text-[8px] font-medium text-gray-900 md:block md:text-2xl lg:w-[832px] lg:text-5xl"
+            className="text-center font-sans text-[8px] font-bold text-gray-900 md:block md:text-2xl md:font-medium lg:w-[832px] lg:text-5xl"
             {...textMotion}
           >
             We offer a seamlessly integrated suite <br /> of technology and

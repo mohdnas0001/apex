@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const handle = "get_apex";
 
-  const twitterLink = `https://twitter.com/${handle}`;
-  const facebookLink = `https://www.facebook.com/${handle}`;
-  const instagramLink = `https://www.instagram.com/${handle}`;
+const twitterLink = `https://twitter.com/${handle}`;
+const facebookLink = `https://www.facebook.com/${handle}`;
+const instagramLink = `https://www.instagram.com/${handle}`;
 
 const Footer: React.FC = () => {
   return (
@@ -16,43 +16,52 @@ const Footer: React.FC = () => {
             <div className="flex w-full flex-col">
               <p className="font-sans text-base font-bold leading-10">APEX</p>
               <p className="mb-4 font-sans text-xs font-medium md:text-lg">
-                For further enquiry please reach out on hi@getapex.tech
+                We&apos;ve got a team of IT wizards ‍♂ who can help you streamline <br />
+                your systems, boost efficiency, and achieve your business goals. <br />
+                Don&apos;t wait! Get a free consultation today and see how we can <br />
+                transform your IT infrastructure. Contact us: hi@getapex.tech
               </p>
             </div>
             <div className="flex w-[120px] items-center justify-start">
               <div className="w-1/3">
                 <a href={twitterLink} target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/X.svg"
-                  alt="Description for Image 1"
-                  width={30}
-                  height={30}
-                  className="rounded-lg"
+                  <Image
+                    src="/X.svg"
+                    alt="Description for Image 1"
+                    width={30}
+                    height={30}
+                    className="rounded-lg"
                   />
-                  </a>
-              </div>
-              <div className="w-1/3">
-                <a href={instagramLink} target="_blank" rel="noopener noreferrer">
-
-                <Image
-                  src="/Linkedin.svg"
-                  alt="Description for Image 2"
-                  width={30}
-                  height={30}
-                  className="rounded-lg"
-                />
                 </a>
               </div>
               <div className="w-1/3">
-                <a href={facebookLink} target="_blank" rel="noopener noreferrer">
-
-                <Image
-                  src="/Facebook.svg"
-                  alt="Description for Image 3"
-                  width={30}
-                  height={30}
-                  className="rounded-lg"
-                />
+                <a
+                  href={instagramLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/Linkedin.svg"
+                    alt="Description for Image 2"
+                    width={30}
+                    height={30}
+                    className="rounded-lg"
+                  />
+                </a>
+              </div>
+              <div className="w-1/3">
+                <a
+                  href={facebookLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/Facebook.svg"
+                    alt="Description for Image 3"
+                    width={30}
+                    height={30}
+                    className="rounded-lg"
+                  />
                 </a>
               </div>
             </div>
@@ -130,13 +139,13 @@ const Footer: React.FC = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="font-sans text-base dark:text-gray-400 sm:text-center">
             © 2024{" "}
-            <a href="#" className="hover:underline">
-              Apex Technologies™
+            <a href="#" className="font-sans hover:underline">
+              Apex Technologies
             </a>
-            . All Rights Reserved.
+          
           </span>
           <div className="mt-4 flex items-center gap-2 font-sans text-base sm:mt-0 sm:justify-center">
-            <p>Terms</p>
+            <p className="font-sans">Terms</p>
             <svg
               width="6"
               height="6"
@@ -146,7 +155,7 @@ const Footer: React.FC = () => {
             >
               <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
             </svg>
-            <p>Privacy</p>
+            <p className="font-sans">Privacy</p>
           </div>
         </div>
       </div>

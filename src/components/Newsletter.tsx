@@ -3,17 +3,17 @@ import Image from "next/image";
 
 const Newsletter = () => {
   return (
-    <div className="relative mx-auto mt-10 h-auto w-full max-w-7xl px-6  md:mt-0 md:px-20">
+    <div className="relative mx-auto mt-10 h-auto w-full max-w-7xl px-6 md:mt-0 md:px-20">
       <div className="flex w-full flex-col items-center justify-center">
         <div className="w-full flex-col items-center justify-between font-sans">
-        <h1 className="text-center w-full font-sans text-lg font-medium text-gray-900 md:block md:text-2xl  lg:text-4xl">
+          <h1 className="w-full text-center font-sans text-lg font-medium text-gray-900 md:block md:text-2xl lg:text-4xl">
             Get access to our pool of Resources
           </h1>
           <p className="mt-2 text-center text-base font-normal leading-6">
-            Discover how our clients have achieved remarkable success with
-            Apex&apos;s <br className="hidden md:block" /> tailored strategies.
-            Read about their journeys and get inspired by their{" "}
-            <br className="hidden md:block" /> accomplishments.
+            We connect you with the brightest minds in African tech . Our
+            curated pool of talent offers a unique blend of global experience
+            and local expertise, ensuring you find the perfect fit
+            for your project.
           </p>
         </div>
         <div className="mt-6 flex w-full flex-col items-center justify-center gap-4 lg:mt-0 lg:flex-row">

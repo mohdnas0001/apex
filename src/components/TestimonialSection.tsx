@@ -6,7 +6,6 @@ import "../app/globals.css";
 interface Testimonial {
   feedback: string;
   clientName: string;
-  clientPosition: string;
   clientImage: string;
 }
 
@@ -14,24 +13,21 @@ const testimonials: Testimonial[] = [
   {
     feedback:
       "Apex has been instrumental in our software development process. It provides comprehensive solutions tailored to our needs, allowing us to deliver high-quality software efficiently.",
-    clientName: "Micheal Gough",
-    clientPosition: "CEO at Google",
+    clientName: "Sadiq Haruna",
     clientImage:
       "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
   },
   {
     feedback:
       "With Apex, we can rest assured that our organization's cybersecurity is in safe hands. Its advanced security features and robust solutions help us protect our data and systems effectively.",
-    clientName: "Jane Doe",
-    clientPosition: "CTO at Microsoft",
+    clientName: "Peace Ojo",
     clientImage:
       "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
   },
   {
     feedback:
       "Apex is more than just a software platform; it's a comprehensive solution for all our software and cybersecurity needs. Its versatility and reliability make it indispensable for our organization.",
-    clientName: "John Smith",
-    clientPosition: "Lead Developer at Amazon",
+    clientName: "Adebayo Femi",
     clientImage:
       "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
   },
@@ -39,14 +35,14 @@ const testimonials: Testimonial[] = [
 
 const TestimonialSectionItem: React.FC<
   Testimonial & { isVisible: boolean }
-> = ({ feedback, clientName, clientPosition, clientImage, isVisible }) => {
+> = ({ feedback, clientName,  clientImage, isVisible }) => {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: isVisible ? 1 : 0.5, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
       transition={{ duration: 0.5 }}
-      className={`mb-4 w-full md:rounded-lg border border-gray-300 p-4 md:shadow-lg ${
+      className={`mb-4 w-full border border-gray-300 p-4 md:rounded-lg md:shadow-lg ${
         isVisible ? "" : "blur-sm"
       }`}
     >
@@ -77,9 +73,7 @@ const TestimonialSectionItem: React.FC<
             <div className="text-xs font-medium text-gray-900 md:pr-2 md:text-base">
               {clientName}
             </div>
-            <div className="text-xs font-light text-gray-500 md:pl-2 md:text-base">
-              {clientPosition}
-            </div>
+            
           </div>
         </figcaption>
       </figure>
@@ -139,7 +133,6 @@ const TestimonialSection: React.FC = () => {
                 key={index}
                 feedback={testimonial.feedback}
                 clientName={testimonial.clientName}
-                clientPosition={testimonial.clientPosition}
                 clientImage={testimonial.clientImage}
                 isVisible={index === 1}
               />

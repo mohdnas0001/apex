@@ -16,7 +16,10 @@ const Partners = () => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
-    <div className="relative mx-auto mt-10 w-full items-center justify-between overflow-hidden bg-[#E3E3E3] p-2" ref={ref}>
+    <div
+      className="relative mx-auto mt-10 w-full items-center justify-between overflow-hidden bg-[#E3E3E3] p-2"
+      ref={ref}
+    >
       <div className="flex flex-col items-center justify-evenly lg:p-8">
         <div className="items-center justify-start lg:w-[300px]">
           <h1 className="text-center text-sm font-bold leading-5 text-[#262626] md:text-start md:text-2xl md:leading-8">
@@ -28,7 +31,7 @@ const Partners = () => {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="flex w-full items-center my-2 justify-center"
+                className="my-2 flex w-full items-center justify-center"
               >
                 <Image
                   src={partner.logo}
