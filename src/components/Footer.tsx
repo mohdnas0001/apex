@@ -101,17 +101,17 @@ const Footer: React.FC = () => {
               <ul className="font-sans text-base font-medium text-black dark:text-gray-400">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Join hiring pool
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Recruitment
+                    Software Development
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Cyber Security
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                    Recruitment Services
                   </a>
                 </li>
               </ul>

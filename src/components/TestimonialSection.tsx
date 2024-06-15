@@ -6,7 +6,6 @@ import "../app/globals.css";
 interface Testimonial {
   feedback: string;
   clientName: string;
-  clientImage: string;
 }
 
 const testimonials: Testimonial[] = [
@@ -14,28 +13,22 @@ const testimonials: Testimonial[] = [
     feedback:
       "Apex has been instrumental in our software development process. It provides comprehensive solutions tailored to our needs, allowing us to deliver high-quality software efficiently.",
     clientName: "Sadiq Haruna",
-    clientImage:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
   },
   {
     feedback:
       "With Apex, we can rest assured that our organization's cybersecurity is in safe hands. Its advanced security features and robust solutions help us protect our data and systems effectively.",
     clientName: "Peace Ojo",
-    clientImage:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
   },
   {
     feedback:
       "Apex is more than just a software platform; it's a comprehensive solution for all our software and cybersecurity needs. Its versatility and reliability make it indispensable for our organization.",
     clientName: "Adebayo Femi",
-    clientImage:
-      "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
   },
 ];
 
 const TestimonialSectionItem: React.FC<
   Testimonial & { isVisible: boolean }
-> = ({ feedback, clientName,  clientImage, isVisible }) => {
+> = ({ feedback, clientName,  isVisible }) => {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -64,11 +57,7 @@ const TestimonialSectionItem: React.FC<
           </p>
         </blockquote>
         <figcaption className="mt-4 flex flex-col items-center justify-center space-x-3 sm:mt-6 md:flex-row">
-          <img
-            className="h-auto w-6 rounded-full md:h-6"
-            src={clientImage}
-            alt="profile picture"
-          />
+         
           <div className="flex flex-col items-center md:flex-row md:divide-x-2 md:divide-gray-500">
             <div className="text-xs font-medium text-gray-900 md:pr-2 md:text-base">
               {clientName}
@@ -133,7 +122,6 @@ const TestimonialSection: React.FC = () => {
                 key={index}
                 feedback={testimonial.feedback}
                 clientName={testimonial.clientName}
-                clientImage={testimonial.clientImage}
                 isVisible={index === 1}
               />
             ))}

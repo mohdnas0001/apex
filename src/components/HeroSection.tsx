@@ -43,7 +43,7 @@ const HeroSection = () => {
       ref={ref}
     >
       <style>{animationStyles}</style>
-      <div className="absolute inset-0 flex items-center justify-center md:flex-col">
+      <div className="relative inset-0 flex items-center justify-center md:flex-col">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">
           <motion.div
             className="flex flex-row items-center justify-between gap-1 rounded-full bg-white px-[4px] md:mb-4 md:border md:border-gray-200 md:px-4 md:py-1 lg:gap-2"
@@ -87,7 +87,7 @@ const HeroSection = () => {
         </div>
       </div>
       <svg
-        className="h-full w-full"
+        className="hidden h-full w-full"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 780 410"
       >
