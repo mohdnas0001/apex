@@ -57,7 +57,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 // Service data
 const services: ServiceCardProps[] = [
   {
-    serviceName: "Web & App Development",
+    serviceName: "Software Development",
     serviceDescription:
       "We create user-friendly web applications and mobile apps to elevate your digital presence, drive user engagement, and fuel business growth.",
     icon: "/Web.svg",

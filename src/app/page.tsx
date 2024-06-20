@@ -45,13 +45,13 @@ const Home = () => {
       >
         <HeroSection />
       </motion.div>
-      <motion.div
+      {/* <motion.div
         ref={refBanner}
         animate={{ opacity: inViewBanner ? 1 : 0 }}
         transition={{ duration: 0.5 }}
       >
         <Banner />
-      </motion.div>
+      </motion.div> */}
       {/* <motion.div
         ref={refPartners}
         animate={{ opacity: inViewPartners ? 1 : 0 }}
