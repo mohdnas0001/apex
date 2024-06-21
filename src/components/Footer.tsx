@@ -14,13 +14,14 @@ const Footer: React.FC = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <div className="flex w-full flex-col">
-              <p className="font-sans text-base font-bold leading-10">APEX</p>
-              <p className="mb-4 font-sans text-xs font-medium text-gray-700 md:text-lg">
-        We&apos;ve got a team of IT wizards 🧙‍♂️ who can help you streamline <br />
-        your systems, boost efficiency, and achieve your business goals. <br />
-        Don&apos;t wait! Get a free consultation today and see how we can <br />
-        transform your IT infrastructure. <br />
-        Contact us: <a href="mailto:hi@getapex.tech" className="text-blue-600 hover:underline">hi@getapex.tech</a>
+            <p className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Contact info</p>
+      <p className="mb-4 font-sans text-xs font-medium text-gray-700 md:text-lg" >
+        Nigeria 🇳🇬 : PLOT 1091 BLOCK C 2ND FLOOR MAINA COURT BUILDING, <br />
+        HERBERT MARCAULAY WAY, CENTRAL BUSINESS DISTRICT, ABUJA, FCT 900103.
+        <br /><br />
+        USA 🇺🇸 : 13500 Lyndhurst Street, Austin, Texas 78717 United States.
+        {/* <br /><br />
+        Contact us: <a href="mailto:hi@getapex.tech" className="text-blue-600 hover:underline">hi@getapex.tech</a> */}
       </p>
             </div>
             <div className="flex w-[120px] items-center justify-start">
