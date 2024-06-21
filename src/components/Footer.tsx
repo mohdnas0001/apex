@@ -20,8 +20,8 @@ const Footer: React.FC = () => {
         HERBERT MARCAULAY WAY, CENTRAL BUSINESS DISTRICT, ABUJA, FCT 900103.
         <br /><br />
         USA 🇺🇸 : 13500 Lyndhurst Street, Austin, Texas 78717 United States.
-        <br /><br />
-        Contact us: <a href="mailto:hi@getapex.tech" className="text-blue-600 hover:underline">hi@getapex.tech</a>
+        {/* <br /><br />
+        Contact us: <a href="mailto:hi@getapex.tech" className="text-blue-600 hover:underline">hi@getapex.tech</a> */}
       </p>
             </div>
             <div className="flex w-[120px] items-center justify-start">
