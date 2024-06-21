@@ -45,7 +45,7 @@ const HeroSection = () => {
       <style>{animationStyles}</style>
       <div className="relative inset-0 flex items-center justify-center md:flex-col">
         <div className="flex flex-col items-center md:mt-16 lg:mt-12 lg:gap-4">
-          <motion.div
+          {/* <motion.div
             className="flex flex-row items-center justify-between gap-1 rounded-full bg-white px-[4px] md:mb-4 md:border md:border-gray-200 md:px-3 md:py-1 lg:gap-2"
             {...textMotion}
           >
@@ -61,7 +61,7 @@ const HeroSection = () => {
             <p className="font-sans text-[12px] font-normal leading-6 text-gray-900 md:text-sm lg:text-base">
               APEX Technology
             </p>
-          </motion.div>
+          </motion.div> */}
           <motion.h2
             className="text-center my-4 md:my-1 font-sans leading-8 text-2xl  font-medium text-gray-900 md:leading-10 md:text-2xl md:font-medium lg:w-full lg:text-6xl"
             {...textMotion}
@@ -77,12 +77,14 @@ const HeroSection = () => {
     height={161}
     className="absolute inset-0 h-auto w-full md:h-full"
   />
+  <a href="https://calendly.com/the-apextd/30min">
   <motion.button
     className="relative z-10 mt-4 md:mt-0 transform rounded-full bg-black px-8 py-2 md:px-16 md:py-4 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105"
     {...fadeIn}
   >
     Get Started
   </motion.button>
+  </a>
 </div>
 
 

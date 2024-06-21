@@ -15,12 +15,13 @@ const Footer: React.FC = () => {
           <div className="mb-6 md:mb-0">
             <div className="flex w-full flex-col">
               <p className="font-sans text-base font-bold leading-10">APEX</p>
-              <p className="mb-4 font-sans text-xs font-medium md:text-lg">
-                We&apos;ve got a team of IT wizards ‍♂ who can help you streamline <br />
-                your systems, boost efficiency, and achieve your business goals. <br />
-                Don&apos;t wait! Get a free consultation today and see how we can <br />
-                transform your IT infrastructure. Contact us: hi@getapex.tech
-              </p>
+              <p className="mb-4 font-sans text-xs font-medium text-gray-700 md:text-lg">
+        We&apos;ve got a team of IT wizards 🧙‍♂️ who can help you streamline <br />
+        your systems, boost efficiency, and achieve your business goals. <br />
+        Don&apos;t wait! Get a free consultation today and see how we can <br />
+        transform your IT infrastructure. <br />
+        Contact us: <a href="mailto:hi@getapex.tech" className="text-blue-600 hover:underline">hi@getapex.tech</a>
+      </p>
             </div>
             <div className="flex w-[120px] items-center justify-start">
               <div className="w-1/3">
@@ -106,12 +107,22 @@ const Footer: React.FC = () => {
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Cyber Security
+                    Cyber Security Solutions 
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Recruitment Services
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                  ⁠Cloud Solutions and Storage
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                  ⁠Data Management Solutions 
                   </a>
                 </li>
               </ul>
@@ -126,11 +137,21 @@ const Footer: React.FC = () => {
                     Faqs
                   </a>
                 </li>
-                <li>
+                <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Apex Community
+                  ⁠IT Hardware and Infrastructure Supplies 
                   </a>
                 </li>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                  ⁠⁠Security and Safety Solutions for Homes and Complexes
+                  </a>
+                </li>
+                {/* <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                  ⁠⁠Data Management Solutions 
+                  </a>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -140,12 +161,12 @@ const Footer: React.FC = () => {
           <span className="font-sans text-base dark:text-gray-400 sm:text-center">
             © 2024{" "}
             <a href="#" className="font-sans hover:underline">
-              Apex Technologies
+              Apex Technology
             </a>
           
           </span>
           <div className="mt-4 flex items-center gap-2 font-sans text-base sm:mt-0 sm:justify-center">
-            <p className="font-sans">Terms</p>
+            {/* <p className="font-sans">Terms</p> */}
             <svg
               width="6"
               height="6"
@@ -155,7 +176,7 @@ const Footer: React.FC = () => {
             >
               <circle cx="3" cy="3" r="3" fill="#D9D9D9" />
             </svg>
-            <p className="font-sans">Privacy</p>
+            {/* <p className="font-sans">Privacy</p> */}
           </div>
         </div>
       </div>
