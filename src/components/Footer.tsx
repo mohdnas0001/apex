@@ -15,14 +15,18 @@ const Footer: React.FC = () => {
           <div className="mb-6 md:mb-0">
             <div className="flex w-full flex-col">
             <p className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Contact info</p>
-      <p className="mb-4 font-sans text-xs font-medium text-gray-700 md:text-lg" >
-        Nigeria 🇳🇬 : PLOT 1091 BLOCK C 2ND FLOOR MAINA COURT BUILDING, <br />
-        HERBERT MARCAULAY WAY, CENTRAL BUSINESS DISTRICT, ABUJA, FCT 900103.
-        <br /><br />
-        USA 🇺🇸 : 13500 Lyndhurst Street, Austin, Texas 78717 United States.
-        {/* <br /><br />
-        Contact us: <a href="mailto:hi@getapex.tech" className="text-blue-600 hover:underline">hi@getapex.tech</a> */}
-      </p>
+            <p className="mb-4 font-sans text-xs font-medium text-black dark:text-gray-400 md:text-lg text-justify">
+                Nigeria 🇳🇬 : Plot 1091, Block 2, <br />
+                2nd Floor Maina Court Building, <br />
+                Herbert Marcaulay Way, <br />
+                Central Business District,<br />
+                Abuja, Nigeria.
+                <br /><br />
+                USA 🇺🇸 : 13500 Lyndhurst Street, <br />
+                Austin, Texas 78717 United States.
+                {/* <br /><br />
+                Contact us: <a href="mailto:hi@getapex.tech" class="text-blue-600 hover:underline">hi@getapex.tech</a> */}
+            </p>
             </div>
             <div className="flex w-[120px] items-center justify-start">
               <div className="w-1/3">
@@ -128,33 +132,7 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
-                Resources
-              </h2>
-              <ul className="font-sans text-base font-medium text-black dark:text-gray-400">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Faqs
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                  ⁠IT Hardware and Infrastructure Supplies 
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                  ⁠⁠Security and Safety Solutions for Homes and Complexes
-                  </a>
-                </li>
-                {/* <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                  ⁠⁠Data Management Solutions 
-                  </a>
-                </li> */}
-              </ul>
-            </div>
+            
           </div>
         </div>
         <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
