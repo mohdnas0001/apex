@@ -82,14 +82,10 @@ const HeroSection = () => {
     className="relative z-10 mt-4 md:mt-0 transform rounded-full bg-black px-8 py-2 md:px-16 md:py-4 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105"
     {...fadeIn}
   >
-    Get Started
+    Let’s Connect
   </motion.button>
   </a>
 </div>
-
-
-
-
         </div>
       </div>
       {/* <svg
